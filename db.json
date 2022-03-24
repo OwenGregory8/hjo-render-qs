@@ -1,5 +1,4 @@
 {
-  "form": {
     "questions": [
       {
         "InterfaceKey": "Applicant1Title",
@@ -46,5 +45,4 @@
         "Value": "dsdsds"
       }
     ]
-  }
 }
