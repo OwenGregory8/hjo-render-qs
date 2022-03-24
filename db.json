@@ -2,138 +2,48 @@
   "form": {
     "questions": [
       {
-        "value": "888",
-        "interfaceKey": "Applicant1Forename",
-        "title": "What is your name?",
-        "component": "Input",
-        "validation": {
-          "mandatory": false,
-          "regexPattern": "^[0-9]*$"
-        }
+        "InterfaceKey": "Applicant1Title",
+        "Text": "Title",
+        "HelpText": "Please select your title",
+        "DataType": "String",
+        "AnswerControlType": "Select",
+        "Validation": {
+          "Mandatory": false
+        },
+        "Options": [
+          "Mr",
+          "Mrs",
+          "Miss"
+        ],
+        "Value": "Mrs"
       },
       {
-        "value": "yes",
-        "interfaceKey": "20",
-        "repeatingQuestionSetIndex": 0,
-        "title": "Do you own any pets?",
-        "component": "RadioHiddenFields",
-        "options": [
-          {
-            "id": "20.1",
-            "label": "No",
-            "value": "no"
-          },
-          {
-            "id": "20.2",
-            "label": "Yes",
-            "value": "yes"
-          }
-        ],
-        "showHiddenFields": true,
-        "hiddenFieldTriggerValue": "yes",
-        "questions": [
-          {
-            "value": "",
-            "interfaceKey": "21.1",
-            "repeatingQuestionSetIndex": null,
-            "title": "What pets do you own?",
-            "component": "RadioHiddenFields",
-            "options": [
-              {
-                "id": "21.2",
-                "label": "Dog",
-                "value": "dog"
-              },
-              {
-                "id": "21.3",
-                "label": "Cat",
-                "value": "cat"
-              },
-              {
-                "id": "21.4",
-                "label": "Other",
-                "value": "other"
-              }
-            ],
-            "showHiddenFields": false,
-            "hiddenFieldTriggerValue": "other",
-            "questions": [
-              {
-                "value": "",
-                "interfaceKey": "22.1",
-                "repeatingQuestionSetIndex": null,
-                "title": "Please specify",
-                "component": "Input",
-                "validation": {
-                  "mandatory": false
-                }
-              }
-            ],
-            "validation": {
-              "mandatory": false
-            }
-          }
-        ],
-        "validation": {
-          "mandatory": false
-        }
+        "InterfaceKey": "Applicant1Forename",
+        "Text": "First Name",
+        "HelpText": "Please enter your first name in full",
+        "DataType": "String",
+        "AnswerControlType": "Input",
+        "Validation": {
+          "Mandatory": false,
+          "RegexMessage": "Please enter only alpha characters, spaces, hyphens, and apostrophes in this field",
+          "MinLength": 2,
+          "MaxLength": 50
+        },
+        "Value": "hello rick"
       },
       {
-        "value": "dfdfd@email.com",
-        "interfaceKey": "30",
-        "repeatingQuestionSetIndex": null,
-        "title": "What is your email address?",
-        "component": "Input",
-        "validation": {
-          "mandatory": false
-        }
-      },
-      {
-        "value": "yes",
-        "interfaceKey": "ContentsItemsToSpecify",
-        "repeatingQuestionSetIndex": null,
-        "title": "Do you need to specify any valuables above £2,500 within the home?",
-        "component": "RadioHiddenFields",
-        "options": [
-          {
-            "id": "40.1",
-            "label": "No",
-            "value": "no"
-          },
-          {
-            "id": "40.2",
-            "label": "Yes",
-            "value": "yes"
-          }
-        ],
-        "showHiddenFields": true,
-        "hiddenFieldTriggerValue": "yes",
-        "questions": [
-          {
-            "value": [
-              {
-                "PPItemType": "Angling Equipment",
-                "PPItemDescription": "r",
-                "PPItemValue": "y"
-              },
-              {
-                "PPItemType": "Business Equipment",
-                "PPItemDescription": "e",
-                "PPItemValue": "3"
-              }
-            ],
-            "interfaceKey": "40.3",
-            "repeatingQuestionSetIndex": 1,
-            "title": "Please specify",
-            "component": "RepeatingGroup",
-            "validation": {
-              "mandatory": false
-            }
-          }
-        ],
-        "validation": {
-          "mandatory": false
-        }
+        "InterfaceKey": "sdsdsddsds",
+        "Text": "test",
+        "HelpText": "Please enter your first name in full",
+        "DataType": "String",
+        "AnswerControlType": "Input",
+        "Validation": {
+          "Mandatory": false,
+          "RegexMessage": "Please enter only alpha characters, spaces, hyphens, and apostrophes in this field",
+          "MinLength": 2,
+          "MaxLength": 50
+        },
+        "Value": "dsdsds"
       }
     ]
   }
